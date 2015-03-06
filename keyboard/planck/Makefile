@@ -39,7 +39,7 @@
 #----------------------------------------------------------------------------
 
 # Target file name (without extension).
-TARGET = gh60_lufa
+TARGET = planck_lufa
 
 # Directory common source filess exist
 TOP_DIR = ../..
@@ -55,11 +55,10 @@ SRC =	keymap_common.c \
 ifdef KEYMAP
     SRC := keymap_$(KEYMAP).c $(SRC)
 else
-    SRC := keymap_planck.c $(SRC)
+    SRC := keymap_jack.c $(SRC)
 endif
 
 CONFIG_H = config.h
-
 
 # MCU name
 #MCU = at90usb1287
