@@ -48,18 +48,13 @@ TMK_DIR = ../../tmk_core
 TARGET_DIR = .
 
 # project specific files
-SRC = keymap_common.c \
+KEYMAP ?= dankm
+SRC = keymap_$(KEYMAP).c \
+	keymap_common.c \
 	matrix.c \
 	led.c
 
-ifdef KEYMAP
-    SRC := keymap_$(KEYMAP).c $(SRC)
-else
-    SRC := keymap_dankm.c $(SRC)
-endif
-
 CONFIG_H = config.h
-
 
 # MCU name, you MUST set this to match the board you are using
 # type "make clean" after changing this, so all files will be rebuilt
