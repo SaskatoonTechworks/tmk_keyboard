@@ -4,32 +4,32 @@
 #include "keymap_common.h"
 
 const uint8_t KEYMAPS keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-    [0] = KEYMAP_GRID( /* Native */
+    [0] = KEYMAP( /* Native */
       TAB,   Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    BSPC,
       LCTRL, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT,
       LSFT,  Z,    X,    C,    V,    B,    N,    M,    COMM, DOT,  SLSH, ENT,
       ESC,   LGUI, LALT, RSFT, FN1,  SPC,  FN26, FN2,  LEFT, DOWN, UP,   RGHT),
-    [1] = KEYMAP_GRID( /* QWERTY->Colemak */
+    [1] = KEYMAP( /* QWERTY->Colemak */
       TAB,   Q,    W,    F,    P,    G,    J,    L,    U,    Y,    SCLN, BSPC,
       LCTRL, A,    R,    S,    T,    D,    H,    N,    E,    I,    O,    QUOT,
       LSFT,  Z,    X,    C,    V,    B,    K,    M,    COMM, DOT,  SLSH, ENT,
       ESC,   LGUI, LALT, RSFT, FN1,  SPC,  FN26, FN2,  LEFT, DOWN, UP,   RGHT),
-    [2] = KEYMAP_GRID( /* 2: QWERTY->Dvorak */
+    [2] = KEYMAP( /* 2: QWERTY->Dvorak */
       TAB,   QUOT, COMM, DOT,  P,    Y,    F,    G,    C,    R,    L,    BSPC,
       LCTRL, A,    O,    E,    U,    I,    D,    H,    T,    N,    S,    SLSH,
       LSFT,  SCLN, Q,    J,    K,    X,    B,    M,    W,    V,    Z,    ENT,
       ESC,   LGUI, LALT, RSFT, FN1,  SPC,  FN26, FN2,  LEFT, DOWN, UP,   RGHT),
-    [4] = KEYMAP_GRID( /* fn1 */
+    [4] = KEYMAP( /* fn1 */
       ESC,   FN10, FN11, FN12, FN13, FN14, FN15, FN16, FN17, FN18, FN19, DEL,
       MINS,  1,    2,    3,    4,    5,    6,    7,    8,    9,    0,    EQL,
       TRNS,  FN20, BSLS, GRV,  FN22, NO,   NO,   LBRC, RBRC, NO,   NO,   RETURN,
       TRNS,  TRNS, TRNS, TRNS, FN1,  NUHS, TRNS, FN3,  HOME, PGDN, PGUP, END),
-    [5] = KEYMAP_GRID( /* fn2 */
+    [5] = KEYMAP( /* fn2 */
       F1,    F2,   F3,   F4,   F5,   F6,   F7,   F8,   F9,   F10,  F11,  F12,
       TRNS,  FN10, FN11, FN12, FN13, FN14, FN15, FN16, FN17, FN18, FN19, FN21,
       TRNS,  NO,   FN20, NO,   GRV,  NO,   NO,   FN23, FN24, NO,   NO,   TRNS,
       RCTRL, TRNS, TRNS, LSFT, FN3,  NUBS, TRNS, FN2,  MUTE, VOLD, VOLU, MPLY),
-    [6] = KEYMAP_GRID( /* fn1+fn2 */
+    [6] = KEYMAP( /* fn1+fn2 */
       FN7,   FN8,  FN9,  NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   PWR,
       NO,    NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   NO,   SLEP,
       NO,    NO,   NO,   NO,   NO,   NO,   NO,   INS,  PSCR, SLCK, PAUS, WAKE,
