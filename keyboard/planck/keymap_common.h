@@ -30,6 +30,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "keymap.h"
 
 
+#ifdef KEYMAP_SECTION_ENABLE
+#define KEYMAPS __attribute__ ((section (".keymap.keymaps")))
+#define KEYMAP_FN __attribute__ ((section (".keymap.fn_actions")))
+#else
+#define KEYMAPS PROGMEM
+#define KEYMAP_FN PROGMEM
+#endif
+
 extern const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS];
 extern const uint16_t fn_actions[];
 

@@ -1,6 +1,6 @@
 #include "keymap_common.h"
 
-const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+const uint8_t KEYMAPS keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = KEYMAP_GRID( /* Jack */
       TAB,  Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    BSPC,
       ESC,  A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT,
@@ -23,7 +23,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       TRNS, TRNS, TRNS, TRNS, FN2,  TRNS, TRNS, TRNS, MNXT, VOLD, VOLU, MPLY),
 };
 
-const uint16_t PROGMEM fn_actions[] = {
+const uint16_t KEYMAP_FN fn_actions[] = {
     [1] = ACTION_LAYER_MOMENTARY(2),  // to Fn overlay
     [2] = ACTION_LAYER_MOMENTARY(3),  // to Fn overlay
 

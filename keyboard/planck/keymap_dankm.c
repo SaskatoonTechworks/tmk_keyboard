@@ -3,7 +3,7 @@
  */
 #include "keymap_common.h"
 
-const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+const uint8_t KEYMAPS keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = KEYMAP_GRID( /* Native */
       TAB,   Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P,    BSPC,
       LCTRL, A,    S,    D,    F,    G,    H,    J,    K,    L,    SCLN, QUOT,
@@ -35,7 +35,8 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       NO,    NO,   NO,   NO,   NO,   NO,   NO,   INS,  PSCR, SLCK, PAUS, WAKE,
       FN30,  NO,   NO,   NO,   FN3,  BTN3, NO,   FN3,  MSTP, MPRV, MNXT, MPLY),
 };
-const uint16_t PROGMEM fn_actions[] = {
+
+const uint16_t KEYMAP_FN fn_actions[] = {
     [1] = ACTION_LAYER_MOMENTARY(4),
     [2] = ACTION_LAYER_MOMENTARY(5),              
     [3] = ACTION_LAYER_SET_CLEAR(6),
